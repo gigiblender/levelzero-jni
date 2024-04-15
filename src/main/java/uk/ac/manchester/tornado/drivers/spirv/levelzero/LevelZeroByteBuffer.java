@@ -40,6 +40,12 @@ public class LevelZeroByteBuffer {
         this.ptrBuffer = -1;
     }
 
+    public LevelZeroByteBuffer(long ptrBuffer, long size, long alignment) {
+        this.ptrBuffer = ptrBuffer;
+        this.size = size;
+        this.alignment = alignment;
+    }
+
     public long getPtrBuffer() {
         return this.ptrBuffer;
     }
